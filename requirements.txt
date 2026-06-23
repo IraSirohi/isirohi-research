@@ -1,0 +1,10 @@
+# Pin to the versions you actually ran (Colab prints them in results.json -> "env").
+# These are the libraries the pipeline imports:
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+requests
+joblib
+mygene

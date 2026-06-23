@@ -1,0 +1,20 @@
+name: rnaseq-panel
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - requests
+  - joblib
+  - reportlab
+  - pip
+  - pip:
+      - mygene
+# Pin to the exact versions you actually ran (Colab records them in
+# outputs/results.json -> "env"). Replacing the loose names above with
+# "package==version" makes the environment fully reproducible.
