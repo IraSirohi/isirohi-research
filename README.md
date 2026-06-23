@@ -67,4 +67,4 @@ repository (Zenodo DOI to be added).
 
 ## License
 
-[Add a license — e.g., MIT — via GitHub's "Add file → Create new file → LICENSE" chooser.]
+MIT License — see the `LICENSE` file.
