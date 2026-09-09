@@ -1,4 +1,4 @@
-rank,gene,selected_of_60,frequency,stable_core
+Rank,Gene,Selected (/60),Frequency,Stable core
 1,RDH11,24,0.40,no
 2,TRPS1,59,0.98,yes
 3,TCF21,60,1.00,yes
