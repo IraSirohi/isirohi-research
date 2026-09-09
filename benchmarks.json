@@ -1,0 +1,115 @@
+{
+  "panel_size_curve": [
+    {
+      "panel_size": 2,
+      "mean_accuracy": 74.086,
+      "sd": 4.918,
+      "ci_low": 71.038,
+      "ci_high": 77.134
+    },
+    {
+      "panel_size": 5,
+      "mean_accuracy": 94.278,
+      "sd": 2.596,
+      "ci_low": 92.669,
+      "ci_high": 95.887
+    },
+    {
+      "panel_size": 10,
+      "mean_accuracy": 99.317,
+      "sd": 0.674,
+      "ci_low": 98.899,
+      "ci_high": 99.734
+    },
+    {
+      "panel_size": 15,
+      "mean_accuracy": 99.616,
+      "sd": 0.425,
+      "ci_low": 99.352,
+      "ci_high": 99.879
+    },
+    {
+      "panel_size": 20,
+      "mean_accuracy": 99.658,
+      "sd": 0.393,
+      "ci_low": 99.415,
+      "ci_high": 99.902
+    },
+    {
+      "panel_size": 30,
+      "mean_accuracy": 99.658,
+      "sd": 0.393,
+      "ci_low": 99.415,
+      "ci_high": 99.902
+    },
+    {
+      "panel_size": 50,
+      "mean_accuracy": 99.829,
+      "sd": 0.299,
+      "ci_low": 99.644,
+      "ci_high": 100.014
+    },
+    {
+      "panel_size": 75,
+      "mean_accuracy": 99.872,
+      "sd": 0.288,
+      "ci_low": 99.693,
+      "ci_high": 100.051
+    },
+    {
+      "panel_size": 100,
+      "mean_accuracy": 99.915,
+      "sd": 0.18,
+      "ci_low": 99.803,
+      "ci_high": 100.026
+    },
+    {
+      "panel_size": 150,
+      "mean_accuracy": 99.915,
+      "sd": 0.27,
+      "ci_low": 99.747,
+      "ci_high": 100.082
+    },
+    {
+      "panel_size": 200,
+      "mean_accuracy": 99.915,
+      "sd": 0.27,
+      "ci_low": 99.747,
+      "ci_high": 100.082
+    }
+  ],
+  "whole_transcriptome": {
+    "n_genes": 20289,
+    "mean_accuracy": 99.829,
+    "sd": 0.299,
+    "per_fold": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      99.145,
+      99.573,
+      100.0,
+      99.573,
+      100.0
+    ]
+  },
+  "class_balanced": {
+    "n_per_class": 286,
+    "n_total": 1430,
+    "accuracy_by_size": {
+      "2": 73.916,
+      "5": 96.014,
+      "10": 99.091,
+      "15": 99.72,
+      "20": 99.79,
+      "30": 99.72,
+      "50": 99.86,
+      "75": 99.86,
+      "100": 99.86,
+      "150": 99.93,
+      "200": 99.93
+    }
+  }
+}

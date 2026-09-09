@@ -1,0 +1,239 @@
+{
+  "config": {
+    "seed": 42,
+    "n_estimators_ranking": 300,
+    "n_estimators_classifier": 500,
+    "svm_C": 1.0,
+    "n_dev": 2342,
+    "n_test": 586,
+    "n_genes": 20289,
+    "classes": [
+      "BRCA",
+      "COAD",
+      "KIRC",
+      "LUAD",
+      "PRAD"
+    ]
+  },
+  "nested_cv": {
+    "per_fold_choices": [
+      75,
+      50,
+      75,
+      75,
+      100,
+      150,
+      50,
+      150,
+      100,
+      150
+    ],
+    "distinct_choices": [
+      50,
+      75,
+      100,
+      150
+    ],
+    "converged": false,
+    "one_standard_error_rule": {
+      "best_size": 75,
+      "best_mean_accuracy": 99.915,
+      "best_sem": 0.057,
+      "threshold": 99.858,
+      "selected_size": 50,
+      "mean_by_size": {
+        "2": 77.157,
+        "5": 92.91,
+        "10": 98.804,
+        "15": 99.402,
+        "20": 99.701,
+        "30": 99.658,
+        "50": 99.872,
+        "75": 99.915,
+        "100": 99.744,
+        "150": 99.872,
+        "200": 99.872
+      }
+    }
+  },
+  "heldout": {
+    "random_forest": {
+      "accuracy": 99.317,
+      "macro_f1": 99.257,
+      "n_errors": 4,
+      "recall_by_class": {
+        "BRCA": 100.0,
+        "COAD": 98.246,
+        "KIRC": 98.131,
+        "LUAD": 99.029,
+        "PRAD": 100.0
+      },
+      "confusion_matrix": [
+        [
+          220,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          56,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          105,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          102,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          99
+        ]
+      ]
+    },
+    "linear_svm": {
+      "accuracy": 99.659,
+      "macro_f1": 99.67,
+      "n_errors": 2,
+      "recall_by_class": {
+        "BRCA": 100.0,
+        "COAD": 100.0,
+        "KIRC": 99.065,
+        "LUAD": 99.029,
+        "PRAD": 100.0
+      },
+      "confusion_matrix": [
+        [
+          220,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          57,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          106,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          102,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          99
+        ]
+      ]
+    }
+  },
+  "final_panel": {
+    "k": 75,
+    "genes": [
+      "RDH11",
+      "TRPS1",
+      "TCF21",
+      "ACSM2B",
+      "HNF1B",
+      "C8ORF85",
+      "SFTA3",
+      "SCGB2A2",
+      "MCTP2",
+      "IHH",
+      "FOXF1",
+      "GALNT12",
+      "SLC45A3",
+      "NKX2-1",
+      "OVOL2",
+      "MET",
+      "TFAP2A",
+      "KLK2",
+      "HOXB13",
+      "PAX8",
+      "SCGB3A2",
+      "C9ORF152",
+      "SCTR",
+      "BEND4",
+      "SLC6A13",
+      "FZD5",
+      "KLK3",
+      "EFHD1",
+      "SLC22A2",
+      "C20ORF56",
+      "C9ORF167",
+      "PAX2",
+      "SFTPA2",
+      "SLC17A3",
+      "SFTPB",
+      "HHLA2",
+      "GATA3",
+      "KLK15",
+      "EMX2OS",
+      "HKDC1",
+      "SLC3A1",
+      "SFTPA1",
+      "SFTPD",
+      "CDH16",
+      "SHH",
+      "LMO7",
+      "PRAC",
+      "SLC28A1",
+      "ACPP",
+      "C15ORF21",
+      "TMEFF2",
+      "LMX1B",
+      "DMGDH",
+      "EN1",
+      "CAPN5",
+      "IGSF9",
+      "TMEM140",
+      "NKX3-1",
+      "DHDPSL",
+      "AGXT2",
+      "ADIPOQ",
+      "FOLH1",
+      "ACSM3",
+      "HSD17B11",
+      "PAGE4",
+      "ARSE",
+      "ALDH1A3",
+      "SFTA2",
+      "STEAP2",
+      "C17ORF93",
+      "GPA33",
+      "TESC",
+      "SEL1L3",
+      "HOXA10",
+      "PRLR"
+    ]
+  }
+}

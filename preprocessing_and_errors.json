@@ -1,0 +1,79 @@
+{
+  "preprocessing": {
+    "genes_union_across_cohorts": 20530,
+    "genes_intersection_across_cohorts": 20530,
+    "genes_dropped_by_intersection": 0,
+    "genes_zero_variance_removed": 241,
+    "genes_final": 20289,
+    "additional_filters_applied": "none",
+    "samples_final": 2928,
+    "per_cohort": {
+      "BRCA": {
+        "samples_all_types": 1218,
+        "samples_primary_tumor": 1097,
+        "genes_in_cohort": 20530
+      },
+      "KIRC": {
+        "samples_all_types": 606,
+        "samples_primary_tumor": 533,
+        "genes_in_cohort": 20530
+      },
+      "LUAD": {
+        "samples_all_types": 576,
+        "samples_primary_tumor": 515,
+        "genes_in_cohort": 20530
+      },
+      "PRAD": {
+        "samples_all_types": 550,
+        "samples_primary_tumor": 497,
+        "genes_in_cohort": 20530
+      },
+      "COAD": {
+        "samples_all_types": 329,
+        "samples_primary_tumor": 286,
+        "genes_in_cohort": 20530
+      }
+    }
+  },
+  "misclassification": {
+    "random_forest": {
+      "n_test": 586,
+      "n_misclassified": 4,
+      "accuracy_pct": 99.317,
+      "errors_by_direction": {
+        "KIRC -> BRCA": 2,
+        "COAD -> LUAD": 1,
+        "LUAD -> KIRC": 1
+      },
+      "misclassified_sample_ids": [
+        "TCGA-B0-4696-01",
+        "TCGA-B0-4688-01",
+        "TCGA-AY-6196-01",
+        "TCGA-38-4630-01"
+      ]
+    },
+    "linear_svm": {
+      "n_test": 586,
+      "n_misclassified": 2,
+      "accuracy_pct": 99.659,
+      "errors_by_direction": {
+        "KIRC -> BRCA": 1,
+        "LUAD -> KIRC": 1
+      },
+      "misclassified_sample_ids": [
+        "TCGA-B0-4696-01",
+        "TCGA-38-4630-01"
+      ]
+    },
+    "shared_errors": {
+      "n_missed_by_both": 2,
+      "n_missed_by_rf_only": 2,
+      "n_missed_by_svm_only": 0,
+      "sample_ids_missed_by_both": [
+        "TCGA-B0-4696-01",
+        "TCGA-38-4630-01"
+      ],
+      "interpretation_hint": "Samples missed by BOTH models are candidates for intrinsically ambiguous specimens; samples missed by only one are model-specific error. Report both counts in Results 3.2."
+    }
+  }
+}
